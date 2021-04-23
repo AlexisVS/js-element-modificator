@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript : element modificator</title>
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+</head>
+
+<body class="flex">
+    <nav class="w-max m-0 px-5 flex flex-col bg-gray-400">
+        <button onclick="applyParams()" class="w-11/12 bg-gray-300 flex justify-center mt-5 text-5xl py-5">
+            ✔️</button>
+        <p class="text-2xl my-5">Size :</p>
+        <label for="width">Width</label>
+        <input type="range" id="rangeWidth" min="0" max="2000" name="width">
+        <label for="height">Height</label>
+        <input type="range" id="rangeHeight" min="0" max="1000" name="height">
+        <p class="text-2xl my-5 pr-5">background-color :</p>
+        <label for="background-red"> Red</label>
+        <input type="range" id="rangeBackgroundRed" min="0" max="255" name="background-red">
+        <label for="background-green">Green</label>
+        <input type="range" id="rangeBackgroundGreen" min="0" max="255" name="background-green">
+        <label for="background-blue">Blue</label>
+        <input type="range" id="rangeBackgroundBlue" min="0" max="255" name="background-blue">
+    </nav>
+    <section class="flex flex-col justify-center items-center w-full">
+        <div id="myElement"></div>
+    </section>
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
