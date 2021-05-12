@@ -12,21 +12,43 @@
 </head>
 
 <body class="flex">
-    <nav class="w-max m-0 px-5 flex flex-col bg-gray-400">
-        <button onclick="applyParams()" class="w-11/12 bg-gray-300 flex justify-center mt-5 text-5xl py-5">
-            ✔️</button>
+    <nav class="w-2/12 m-0 px-5 flex flex-col bg-gray-400">
+
+<!-- -------------------------------- size --------------------------------- -->
+
         <p class="text-2xl my-5">Size :</p>
         <label for="width">Width</label>
-        <input type="range" id="rangeWidth" min="0" max="2000" name="width">
+        <input type="range" id="rangeWidth" min="0" max="2000" name="width" onchange="applyParams()">
         <label for="height">Height</label>
-        <input type="range" id="rangeHeight" min="0" max="1000" name="height">
-        <p class="text-2xl my-5 pr-5">background-color :</p>
+        <input type="range" id="rangeHeight" min="0" max="1000" name="height" onchange="applyParams()">
+
+<!-- -------------------------- Background-color --------------------------- -->
+
+        <p class="text-2xl my-5 pr-5">Background-color :</p>
         <label for="background-red"> Red</label>
-        <input type="range" id="rangeBackgroundRed" min="0" max="255" name="background-red">
+        <input type="range" id="rangeBackgroundRed" min="0" max="255" name="background-red" onchange="applyParams()">
         <label for="background-green">Green</label>
-        <input type="range" id="rangeBackgroundGreen" min="0" max="255" name="background-green">
+        <input type="range" id="rangeBackgroundGreen" min="0" max="255" name="background-green" onchange="applyParams()">
         <label for="background-blue">Blue</label>
-        <input type="range" id="rangeBackgroundBlue" min="0" max="255" name="background-blue">
+        <input type="range" id="rangeBackgroundBlue" min="0" max="255" name="background-blue" onchange="applyParams()">
+        
+        <!-- -------------------------- Foreground color --------------------------- -->
+
+        <p class="text-2xl my-5 pr-5">Foreground-color :</p>
+        <label for="foreground-red"> Red</label>
+        <input type="range" id="rangeForegroundRed" min="0" max="255" name="foreground-red" onchange="applyParams()">
+        <label for="foreground-green">Green</label>
+        <input type="range" id="rangeForegroundGreen" min="0" max="255" name="foreground-green" onchange="applyParams()">
+        <label for="foreground-blue">Blue</label>
+        <input type="range" id="rangeForegroundBlue" min="0" max="255" name="foreground-blue" onchange="applyParams()">
+        
+        <!-- ------------------------------- Border -------------------------------- -->
+        
+        <p class="text-2xl my-5 pr-5">Border</p>
+        <label for="border-radius"> border-radius</label>
+        <input type="range" id="rangeBorderRadius" min="0" max="1000" name="border-radius" onchange="applyParams()">
+
+
     </nav>
     <section class="flex flex-col justify-center items-center w-full">
         <div id="myElement"></div>
